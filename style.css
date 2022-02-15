@@ -2,25 +2,46 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
+/* REGOLE PRINCIPALI */
+#container-aside a{
+    text-decoration: none;
+    color: grey;
+}
+
+/* CONTAINER PRINCIPAL MAIN-ASIDE  */
 .container-main-aside{
     display: flex;
     flex-flow: row wrap;
     height: calc(100vh - 70px);
 }
-
-aside{
+/*********** ASIDE  *********/
+#container-aside{
     background-color: black;
-    flex-grow: 1;
-    
 }
 
+.aside-img img{
+    width: 120px;
+}
+
+.aside-nav img{
+    width: 15px;
+}
+
+.aside-nav p{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*********** MAIN *********/
 main{
     background-color: #141922;
-    flex-grow: 9;
+    flex-grow: 1;
 }
-
+/*********** FOOTER  *********/
 footer{
     background-color: #282828;
     height: 70px;
