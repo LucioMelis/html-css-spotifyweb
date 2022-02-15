@@ -7,7 +7,7 @@
 .container-main-aside{
     display: flex;
     flex-flow: row wrap;
-    height: 92vh;
+    height: calc(100vh - 70px);
 }
 
 aside{
@@ -23,7 +23,7 @@ main{
 
 footer{
     background-color: #282828;
-    height: 8vh;
+    height: 70px;
     display: flex;
     flex-flow: row wrap;
 }
