@@ -168,10 +168,12 @@ button{
     background-color: black;
     margin-right: 20px;
 }
+
 /* hover  */
 button:hover{
     transform: scale(1.1);
 }
+
 /* MAIN-SECTION */
 .main-section{
     width: 95%;
