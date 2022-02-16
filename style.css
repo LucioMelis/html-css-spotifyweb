@@ -224,7 +224,8 @@ a{
     transform: scale(1.2);
 }
 
-.player-bottom:hover .loading{
+.player-bottom:hover .loading,
+.sound-view:hover .loading{
     background-color: greenyellow;
 }
 
@@ -253,6 +254,7 @@ a{
 .volume{
     width: 100px;
     margin-right: 10px;
+    position: relative;
 }
 
 .loading-size{
@@ -260,6 +262,7 @@ a{
 }
 
 .sound{
-    width: 20px;
+    left: 20px;
 }
+
 
