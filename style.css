@@ -185,10 +185,6 @@ a{
     font-size: 25px;
 }
 
-.player-top i:hover{
-    transform: scale(1.2);
-}
-
 .player-bottom{
     display: flex;
     align-items: center;
@@ -212,8 +208,29 @@ a{
     background-color:#c1c1c1;
 }
 
-.loading:hover{
+.circle{
+    position: absolute;
+    bottom: -4.5px;
+    left: 100px;
+    background-color: white;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: none;
+}
+/* HOVER player-top player-bottom */
+.player-top i:hover,
+.sound-view i:hover{
+    transform: scale(1.2);
+}
+
+.player-bottom:hover .loading{
     background-color: greenyellow;
+}
+
+.player-bottom:hover .circle,
+.sound-view:hover .circle{
+    display: inline;
 }
 
 .player-bottom div:nth-child(1),
@@ -239,6 +256,10 @@ a{
 }
 
 .loading-size{
+    width: 20px;
+}
+
+.sound{
     width: 20px;
 }
 
