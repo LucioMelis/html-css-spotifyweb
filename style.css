@@ -359,12 +359,12 @@ button:hover{
 }
 
 .player-bottom:hover .loading,
-.sound-view:hover .loading{
+.music-track:hover .loading{
     background-color: greenyellow;
 }
 
 .player-bottom:hover .circle,
-.sound-view:hover .circle{
+.music-track:hover .circle{
     display: inline;
 }
 
