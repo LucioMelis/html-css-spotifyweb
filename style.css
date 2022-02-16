@@ -19,6 +19,21 @@ a{
     color: grey;
 }
 
+.h1-main{
+    color: white;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.p-color-size{
+        color: grey;
+        font-size: small;
+}
+
+h1 + p{
+    padding-bottom: 20px;
+}
+
 
 /* CONTAINER PRINCIPAL MAIN-ASIDE  */
 .container-main-aside{
@@ -148,8 +163,9 @@ a{
 }
 /* MAIN-HEADER  */
 .main-header{
+    background-color:rgba(0, 0, 0, 0.3);
     height: 70px;
-    background-color: rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
 }
 
 .container-button{
@@ -176,18 +192,88 @@ button:hover{
 
 /* MAIN-SECTION */
 .main-section{
-    width: 95%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
 }
-
+/* ITEM CONTAINER MENU'  */
 .item-container-menù{
     display: flex;
     justify-content: center;
+    column-gap: 20px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: small;
+}
+/* ITEM-CONTAINER-PLAYED */
+/* ITEM-CONTAINER-CREATED */
+/* ITEM-CONTAINER-ARTIST  */
+.item-container-played,
+.item-container-created,
+.item-container-artist{
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
+.container-album{
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.album{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.album > div,
+.album > div > img{
+    width: 100%;
+}
+
+.album p:nth-child(2){
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.stranger-things{
+    max-width: 170px;
+}
+
+.item-container-artist .album div img{
+    border-radius: 50%;
+}
+
+.album div i{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50% , -50%);
+    font-size: 50px;
+}
+
+.album div:first-child{
+    position: relative;
+}
+
+/* hover  */
+.item-container-menù div a:hover{
+    color: white;
+    border-bottom: 1px solid #adff2f;
+}
+
+.album div:hover i{
+    display: inline;
+}
+
+.album div:hover{
+    opacity: 50%;
+}
 
 /*********** FOOTER  *********/
 #container-footer{
@@ -312,4 +398,26 @@ button:hover{
     left: 20px;
 }
 
+/***** customization scrollbar *****/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888;
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
 
