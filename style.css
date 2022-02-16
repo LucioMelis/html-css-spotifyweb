@@ -143,13 +143,13 @@ a{
 #container-main{
     background-color: #141922;
     width:calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
 }
 /* MAIN-HEADER  */
 .main-header{
     height: 70px;
     background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    width: calc(100% - 200px)
 }
 
 .container-button{
@@ -168,8 +168,23 @@ button{
     background-color: black;
     margin-right: 20px;
 }
+/* hover  */
+button:hover{
+    transform: scale(1.1);
+}
 /* MAIN-SECTION */
+.main-section{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
 
+.item-container-menù{
+    display: flex;
+    justify-content: center;
+}
 
 
 /*********** FOOTER  *********/
