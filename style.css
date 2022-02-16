@@ -11,6 +11,14 @@ a{
     text-decoration: none;
 }
 
+.white{
+    color: white;
+}
+
+.grey{
+    color: grey;
+}
+
 
 /* CONTAINER PRINCIPAL MAIN-ASIDE  */
 .container-main-aside{
@@ -127,12 +135,51 @@ a{
 }
 
 /*********** MAIN *********/
-main{
+#container-main{
     background-color: #141922;
     width:calc(100% - 200px);
 }
+
+
+
 /*********** FOOTER  *********/
-footer{
+#container-footer{
     background-color: #282828;
     height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOOTER-ARTIST-HEART-FOLDER */
+.artist-heart-folder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.footer-img img{
+    width: 50px;
+    padding-left: 10px;
+}
+
+.p-artist p:nth-child(2){
+    font-size: 12px;
+}
+
+/* FOOTER-PLAYER-PLAYER-TOP-PLAYER BOTTOM */
+.player{
+    display: flex;
+    flex-direction: column;
+}
+
+.player-top{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.player-top .fa-circle-play{
+    font-size: 25px;
 }
