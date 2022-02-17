@@ -290,6 +290,7 @@ button:hover{
 
 /* FOOTER-ARTIST-HEART-FOLDER */
 .artist-heart-folder{
+    background-color: #282828;
     display: flex;
     justify-content: center;
     align-items: center;
