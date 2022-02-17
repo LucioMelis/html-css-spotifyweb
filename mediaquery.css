@@ -1,0 +1,14 @@
+@media screen and (max-width:1030px){
+
+    .container-album{
+        flex-wrap: wrap;
+    }
+    .album{
+        width: calc(100% / 4 - 30px);
+    }
+
+    .stranger-things + p{
+        text-align: center;
+    }
+    
+}

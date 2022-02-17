@@ -28,6 +28,7 @@ a{
 .p-color-size{
         color: grey;
         font-size: small;
+        padding-bottom: 10px;
 }
 
 h1 + p{
@@ -241,7 +242,7 @@ button:hover{
 }
 
 .stranger-things{
-    max-width: 170px;
+    text-align: center;
 }
 
 .item-container-artist .album div img{
