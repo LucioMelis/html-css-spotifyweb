@@ -305,6 +305,7 @@ button:hover{
 .player{
     display: flex;
     flex-direction: column;
+    background-color: #282828;
 }    
 
 .player-top{
@@ -379,6 +380,7 @@ button:hover{
     display: flex;
     align-items: center;
     column-gap: 15px;
+    background-color: #282828;
 }
 
 .sound-view div i{
