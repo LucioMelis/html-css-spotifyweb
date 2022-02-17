@@ -61,7 +61,11 @@ h1 + p{
 .aside-img img{
     width: 120px;
     padding-left: 10px;
-}    
+} 
+
+.logo-small{
+    display: none;
+}
 
 /* ASIDE-NAV */
 .aside-nav,

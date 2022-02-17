@@ -10,6 +10,14 @@
     .stranger-things + p{
         text-align: center;
     }
+
+    .music-track{
+        width: 300px;
+    }
+
+    .volume{
+        width: 80px;
+    }
     
 }
 
@@ -20,15 +28,138 @@
     }
 
     .album{
-        width: calc(100% / 2 - 30px);
+        width: calc(100% / 3 - 30px);
     }
 
     .music-track{
-        width: 300px;
+        width: 180px;
     }
 
     .volume{
         width: 80px;
     }
 
+    .artist-heart-folder{
+        column-gap: 10px;
+    }
+
+    .player-top{
+        column-gap: 15px;
+    }
+
+    .player-bottom{
+        column-gap: 10px;
+    }
+
+    .sound-view{
+        column-gap: 10px;
+    }
+
+
 }
+
+@media screen and (max-width:765px){
+    .container-album{
+        flex-wrap: wrap;
+    }
+
+    .album{
+        width: calc(100% / 2 - 30px);
+    }
+
+    .music-track{
+        
+        width: 100px;
+    }
+
+    .volume{
+        width: 50px;
+    }
+
+    
+
+}
+
+@media screen and (max-width:540px){
+
+    /* font generali */
+    .item-container-menù{
+        font-size: 10px;
+    }
+
+    .h1-main{
+        font-size: 16px;
+    }
+
+    .album p:nth-child(2){
+        font-size: 12px;
+    }
+
+    .p-color-size{
+        font-size: 8px;
+        font-weight: bold;
+    }
+    /* misure logo  */
+    .aside-img img:first-child{
+        display: none;
+    }
+
+    .logo-small{
+        display: block;
+    }
+    
+    .aside-img .logo-small{
+        width: 40px;
+    }
+
+    .aside-nav img{
+        width: 30px;
+    }
+
+    .aside-end a{
+        border-bottom: none;
+    }
+
+    /* misure container  */
+    #container-main{
+        width:calc(100% - 50px);
+    }
+    
+    #container-aside{
+        width: 50px;
+    }
+
+    .aside-end a img{
+        width: 30px;
+    }
+
+    .aside-end div img{
+        width: 30px;
+    }
+
+    .aside-nav{
+        margin-top: 0;
+    }
+    
+    /* class rimosse */
+    .aside-playlist{
+        display: none;
+    }
+
+    .aside-nav ul li a p{
+        display: none;
+    }
+
+    .aside-end a p,
+    .aside-end div p{
+        display: none;
+    }
+    .border{
+        border-left: none;
+    }
+    
+
+
+}
+
+
