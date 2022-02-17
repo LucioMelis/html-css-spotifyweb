@@ -12,3 +12,23 @@
     }
     
 }
+
+@media screen and (max-width:890px){
+
+    .container-album{
+        flex-wrap: wrap;
+    }
+
+    .album{
+        width: calc(100% / 2 - 30px);
+    }
+
+    .music-track{
+        width: 300px;
+    }
+
+    .volume{
+        width: 80px;
+    }
+
+}
